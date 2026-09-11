@@ -1,15 +1,9 @@
+
 <dependencies>
-    <!-- Spigot/Paper API -->
     <dependency>
         <groupId>org.spigotmc</groupId>
         <artifactId>spigot-api</artifactId>
-        <version>1.20.4-R0.1-SNAPSHOT</version>
+        <version>1.12.2-R0.1-SNAPSHOT</version>
         <scope>provided</scope>
-    </dependency>
-    <!-- Yaml для конфига -->
-    <dependency>
-        <groupId>org.yaml</groupId>
-        <artifactId>snakeyaml</artifactId>
-        <version>2.2</version>
     </dependency>
 </dependencies>

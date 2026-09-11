@@ -1,5 +1,5 @@
 name: LobbyBanEnforcer
-version: '${version}'
+version: '1.0'
 main: com.example.lobbyenforcer.LobbyBanEnforcer
-author: Kodari
-description: Checks lobby players against a MySQL ban list.
+authors: [KodariAI,YandexAI]
+description: Enforces ban rules in the lobby.

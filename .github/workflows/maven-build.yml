@@ -21,7 +21,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: LobbyBanEnforcer-Jar
           path: target/*.jar

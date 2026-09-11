@@ -1,7 +1,9 @@
+enabled: true
+lobby-world: world
+
 database:
   host: localhost
   port: 3306
-  name: your_database
-  user: your_user
-  password: your_password
-  connection-timeout-ms: 2000
+  database: lobby_bans
+  username: lobby_user
+  password: ""

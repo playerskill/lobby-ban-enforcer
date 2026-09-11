@@ -1,0 +1,30 @@
+name: Build plugin
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Java 8
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '8'
+
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@v3
+        with:
+          arguments: build
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: lobby-ban-enforcer
+          path: build/libs/*.jar

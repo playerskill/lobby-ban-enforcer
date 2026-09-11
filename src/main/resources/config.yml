@@ -1,0 +1,7 @@
+database:
+  host: localhost
+  port: 3306
+  name: your_database
+  user: your_user
+  password: your_password
+  connection-timeout-ms: 2000

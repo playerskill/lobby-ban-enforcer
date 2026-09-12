@@ -1,9 +1,11 @@
-enabled: true
-lobby-world: world
+
+# Конфигурация плагина LobbyBanEnforcer
+# Заполни эти данные, чтобы плагин мог подключиться к твоей базе EasyBans
 
 database:
-  host: localhost
-  port: 3306
-  database: lobby_bans
-  username: lobby_user
-  password: ""
+  host: localhost          # Адрес сервера MySQL (например, localhost или IP)
+  port: 3306               # Порт MySQL
+  name: easybans_db        # Имя базы данных
+  user: root               # Пользователь БД
+  password: your_password  # Пароль пользователя БД
+  table: banlist           # ИМЯ ТАБЛИЦЫ (ты сказал, что это banlist)
